@@ -14,12 +14,13 @@ body {
   
 .navbar {
     background-color: rgba(0, 0, 0, 0.9); /* Color negro con transparencia */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Agrega sombra para mejor visibilidad */
+    box-shadow: 0px 4px 6px rgba(82, 81, 81, 0.1); /* Agrega sombra para mejor visibilidad */
   }
   
   
 @media (max-width: 991px) {
     .navbar {
-      background-color: black; /* Hace que el fondo sea sólido en móviles */
+      background-color: rgb(71, 71, 71); /* Hace que el fondo sea sólido en móviles */
     }
   }
+
