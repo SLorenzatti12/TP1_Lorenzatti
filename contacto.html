@@ -30,13 +30,79 @@
                 </div>      
             </nav>
         </header>
+        <main class="container mt-5">
+            <section id="contacto" class="mt-5 pt-5">
+                <h2 class="text-center mb-4">Contacto</h2>
+                <p class="text-center">Si tenes alguna pregunta o deseas trabajar conmigo, No dudes en contactarme!!</p>
 
-        <h1>Contacto</h1>
+                <form action="https://formspree.io/f/maneoqlb" method="post" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        <div class="invalid-feedback">Por favor, ingrese su nombre</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electronico</label>
+                        <input type="email" class="form-control" id="email" name="_replyto" required>
+                        <div class="invalid-feedback">Por favor, ingrese una dirección valida</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                        <div class="invalid-feedback">Por favor, escriba su mensaje</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </section>
 
+            <section id="redes">
+                <h2>Te invito a seguirme en redes sociales</h2>
+                <p>Podras encontrarme en las siguientes plataformas:</p>
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="mx-3">
+                        <a href="https://x.com/LucianoVietto" target="_blank" class="text-decoration-none">
+                            <img src="Imagenes/IconoX.png" alt="Icono X" width="40" style="margin-right: 10px;">X
+                        </a>
+                    </li>
+                    <li class="mx-3">
+                        <a href="https://www.instagram.com/lucianovietto" target="_blank" class="text-decoration-none">
+                            <img src="Imagenes/IconoIg.png" alt="Icono Instagram" width="40" style="margin-right: 10px;">Instagram
+                        </a>
+                    </li>
+                    <li class="mx-3">
+                        <a href="https://www.linkedin.com/in/luciano-vietto-071634181/" target="_blank" class="text-decoration-none">
+                            <img src="Imagenes/iconolinkedin.png" alt="Icono X" width="40" style="margin-right: 10px;">Linkedin
+                        </a>
+                    </li>
+                    <li class="mx-3">
+                        <a href="https://github.com/luciano" target="_blank" class="text-decoration-none">
+                            <img src="Imagenes/iconogithub.png" alt="Icono X" width="40" style="margin-right: 10px;">Github
+                        </a>
+                    </li>
+                    
+                </ul>
+            </section>
+        </main>
     </body>
-    <footer class="text-center">
+    <footer class="text-center mt-5 py-4 bg-dark text-white">
         <p>&copy; 2025 Luciano Vietto - Todos los derechos reservados</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script>
+        // Validacion de Bootstrap para evitar espacios vacios
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
 </html>

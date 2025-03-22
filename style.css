@@ -67,6 +67,7 @@ body {
   }
 
 footer{
+
   background-color: #343a40;
   color: white;
   padding: 1px 0;
@@ -75,11 +76,14 @@ footer{
 }
 
 #grupos{
-  
   border-radius: 15px;
   margin: 20px auto;
   display: block;
   border: 5px solid #fff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   
+}
+
+#contacto{
+  margin-bottom: 50px;
 }
