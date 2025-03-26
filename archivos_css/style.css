@@ -40,6 +40,7 @@ body {
     background: linear-gradient(to-right, #f8f9fa, #e9ecef);
     padding-top: 70px; 
     text-align: center;
+    transition: background-color 0.3s, color 0.3s;
   }
   
 .navbar {
@@ -86,4 +87,13 @@ footer{
 
 #contacto{
   margin-bottom: 50px;
+}
+
+.toggle{
+  cursor: pointer;
+}
+
+body:has(#modo:checked){
+  background-color: black;
+  color: white;
 }
